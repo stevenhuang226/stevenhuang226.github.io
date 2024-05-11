@@ -1,15 +1,78 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>About Steven Huang 226</title>
-	</head>
-	<body>
-		<h1>關於我</h1>
-		<br>
-		<p>目前是一個高中生，興趣是寫程式，不過實力不怎麼樣。</p>
-		<p>我目前寫程式用的系統是archlinux，已經使用linux系統大約三年了，從一開始的ubuntu，當初只是覺得電腦太慢，聽說linux系統很順暢，所以就下載了，後來因為自己很閒，所以平常在使用系統遇到問題的時候，常常會花很多時間去找解決辦法，雖然說不一定有辦法解決，但是這個過程可以帶給我很多關於電腦的知識，就像是當初我在安裝archlinux的時候，我對整個linux架構有更深入的理解，開機引導等。
-		</p>
-		<br>
-		<p>目前我大概有接觸過得程式有python c++ c javascript assembly(at&t)但是每個都沒有到很精通，因為我自己是喜歡什麼就去研究什麼，所以沒有經過正式的教學，都是從網路上自己亂學來的，最近還有chatGPT可以用，我assembly還有javascript都是從chatGPT那裡問來的。目前也有嘗試再做一些專案，雖然內容都沒有什麼用，但是就是給自己一個遇到問題的機會。</p>
-	</body>
-</html> 
+    <head>
+        <title>地瓜—導覽首頁</title>
+        <link rel='icon' href='./miku.ico' type='image/x-icon/'>
+        <link rel=stylesheet type="text/css" href="style.css">
+    </head>
+    <script src='javascript.js'></script>
+    <body background='./background.jpg' style='background-size:100%'>
+        <div id='search_list'>
+            <div id='s_g_l'>
+                <form name='search_google'>
+                    <input type='text' name='s_g_in' id='list-button-all' style='background-color:rgb(255,255,255); width:750px;' value='' autocomplete='off' placeholder='用google搜尋'>
+                    <input type='button' id='list-button-google-s' value='搜尋' onclick='search_g_js()'>
+                </form>
+            </div>
+            <div id='s_486_l'>
+                <form name='search_486'>
+                    <input type='text' name='s_486_in' id='list-button-all' style='background-color:rgb(255,255,255); width:750px;' value='' autocomplete='off' placeholder='用duckduckgo搜尋'>
+                    <input type='button' id='list-button-486-s' value='搜尋' onclick='search_486_js()'>
+                </form>
+            </div>
+        </div>
+        <div id='table'>
+            <table style='width:1000px'>
+                <tr>
+                    <table id='main-table' style='border-spacing : 0px 0px; width: 300px;'>
+                        <colgroup span='1'></colgroup>
+                        <tr>
+                            <td>
+                                <input type='button' id='list-button-yt' style='width:290px;' value='YouTube' onclick='youtube_list()'>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="button" id="list-button-all" style="width:290px;" value="media" onclick="media_list()">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type='button' id='list-button-steam' style='width:290px;' value='steam' onclick='steam_list()'>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type='button' id='list-button-classroom' style='width:290px;' value='classroom' onclick='classroom_list()'>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type='button' id='list-button-osu' style='width:290px;' value='osu!' onclick='osu_list()'>
+                            </td>
+                        </tr>
+                    </table>
+                </tr>
+                <tr>
+                <table id='list-show'>
+                    <colgroup span='1'></colgroup>
+                        <tr>
+                            <td>
+                                <div id='menu-show-0'></div>
+                                <div id='menu-show-1'></div>
+                                <div id='menu-show-2'></div>
+                                <div id='menu-show-3'></div>
+                                <div id='menu-show-4'></div>
+                                <div id='menu-show-5'></div>
+				<div id='menu-show-6'></div>
+                                <div id='close-botton' style='padding-left:635px'>
+                                    <input type='button' id = 'list-button-close' value='close' onclick='close_list()'>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>
