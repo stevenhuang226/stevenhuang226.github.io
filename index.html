@@ -1,78 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>地瓜—導覽首頁</title>
-        <link rel='icon' href='./miku.ico' type='image/x-icon/'>
-        <link rel=stylesheet type="text/css" href="style.css">
     </head>
-    <script src='javascript.js'></script>
     <body background='./background.jpg' style='background-size:100%'>
-        <div id='search_list'>
-            <div id='s_g_l'>
-                <form name='search_google'>
-                    <input type='text' name='s_g_in' id='list-button-all' style='background-color:rgb(255,255,255); width:750px;' value='' autocomplete='off' placeholder='用google搜尋'>
-                    <input type='button' id='list-button-google-s' value='搜尋' onclick='search_g_js()'>
-                </form>
-            </div>
-            <div id='s_486_l'>
-                <form name='search_486'>
-                    <input type='text' name='s_486_in' id='list-button-all' style='background-color:rgb(255,255,255); width:750px;' value='' autocomplete='off' placeholder='用duckduckgo搜尋'>
-                    <input type='button' id='list-button-486-s' value='搜尋' onclick='search_486_js()'>
-                </form>
-            </div>
-        </div>
-        <div id='table'>
-            <table style='width:1000px'>
-                <tr>
-                    <table id='main-table' style='border-spacing : 0px 0px; width: 300px;'>
-                        <colgroup span='1'></colgroup>
-                        <tr>
-                            <td>
-                                <input type='button' id='list-button-yt' style='width:290px;' value='YouTube' onclick='youtube_list()'>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input type="button" id="list-button-all" style="width:290px;" value="media" onclick="media_list()">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input type='button' id='list-button-steam' style='width:290px;' value='steam' onclick='steam_list()'>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input type='button' id='list-button-classroom' style='width:290px;' value='classroom' onclick='classroom_list()'>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input type='button' id='list-button-osu' style='width:290px;' value='osu!' onclick='osu_list()'>
-                            </td>
-                        </tr>
-                    </table>
-                </tr>
-                <tr>
-                <table id='list-show'>
-                    <colgroup span='1'></colgroup>
-                        <tr>
-                            <td>
-                                <div id='menu-show-0'></div>
-                                <div id='menu-show-1'></div>
-                                <div id='menu-show-2'></div>
-                                <div id='menu-show-3'></div>
-                                <div id='menu-show-4'></div>
-                                <div id='menu-show-5'></div>
-				<div id='menu-show-6'></div>
-                                <div id='close-botton' style='padding-left:635px'>
-                                    <input type='button' id = 'list-button-close' value='close' onclick='close_list()'>
-                                </div>
-                            </td>
-                        </tr>
-                    </table>
-                </tr>
-            </table>
-        </div>
     </body>
 </html>
